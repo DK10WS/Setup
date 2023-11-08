@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm \
   noto-fonts-cjk noto-fonts-extra \
   nvidia-dkms\
   wget\
-  fltatpak\
+  flatatpak\
   power-profiles-daemon
 
 #enable bluez
