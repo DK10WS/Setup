@@ -25,10 +25,10 @@ sudo pacman -S --noconfirm \
     brave\
     htop
 #install Flatpak packages
-  sudo flatpak install flathub com.spotify.Client\
+  flatpak install flathub com.spotify.Client\
   flatpak install flathub com.discordapp.Discord\
   flatpak install flathub org.telegram.desktop\
-  org.libreoffice.LibreOffice
+  flatpak install flathub org.libreoffice.LibreOffice
 
 #taking care of nvidia(Idiots)
   sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
@@ -61,19 +61,11 @@ sudo pacman -S --noconfirm \
 
 
 #Gnome custom extensions
-ArcMenu
-Caffine
-Clipboard History
-Vitals
-Weather Oclock
+#ArcMenu
+#Caffine
+#Clipboard History
+#Vitals
+#Weather Oclock
 
 #Oh my bash setup
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-
-#
-
-
-
-
-
-
