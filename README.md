@@ -25,11 +25,11 @@ ___
 - Browser: Brave
 *******
 ### Gnome Extensions
-- Caffine
-- ArchMenu
-- Clipboard History
-- Vitals
-- WeatherOclock
+- [Caffine](https://extensions.gnome.org/extension/517/caffeine/)
+- [ArchMenu](https://extensions.gnome.org/extension/3628/arcmenu/)
+- [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
+- [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+- [WeatherOclock](https://extensions.gnome.org/extension/5470/weather-oclock/)
 ___
 ### ScreenShots of Desktop
 ![image](https://github.com/DK10WS/Setup/blob/master/Neoftech.png)
