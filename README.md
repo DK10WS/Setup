@@ -32,8 +32,8 @@ ___
 - WeatherOclock
 ___
 ### ScreenShots of Desktop
-![image](~/Setup/Desktop.png)
+![image](https://github.com/DK10WS/Setup/blob/master/Neoftech.png)
 
-![image](~/Setup/Neoftech.png)
+![image](https://github.com/DK10WS/Setup/blob/master/Desktop.png)
 
 
