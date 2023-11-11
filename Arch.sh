@@ -43,7 +43,7 @@ sudo pacman -S --noconfirm \
   sudo chmod +x /usr/bin/battop
 
 # Set Git aliases and other configurations
-if [[ $USER == "karan" ]]; then
+if [[ $USER == "DK10" ]]; then
   git config --global user.email "dhruvkunzru@Gmail.com"
   git config --global user.name "Dhruv Kunzru"
 fi
