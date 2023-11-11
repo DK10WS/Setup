@@ -1,4 +1,4 @@
-# DK10 ARCH LINUX SETUP
+# <span style="color: brown"> DK10 ARCH LINUX SETUP</span>
 
 #### Specifications
 1. AMD(*Can use the same script for intel*) 
