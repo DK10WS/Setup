@@ -9,7 +9,11 @@ sudo pacman -S --noconfirm \
   nvidia-dkms\
   wget\
   flatatpak\
-  power-profiles-daemon
+  power-profiles-daemon\
+  pavucontrol\
+  python-pip\
+  ntfs-3g\
+
 
 #enable bluez
   sudo systemctl enable --now bluetooth
@@ -23,7 +27,8 @@ sudo pacman -S --noconfirm \
   yay -S --noconfirm \
     google-chrome \
     brave\
-    htop
+    htop\
+    pipewire
 #install Flatpak packages
   flatpak install flathub com.spotify.Client\
   flatpak install flathub com.discordapp.Discord\
