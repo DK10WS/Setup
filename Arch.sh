@@ -42,6 +42,12 @@ sudo pacman -S --noconfirm \
   sudo mv battop /usr/bin/
   sudo chmod +x /usr/bin/battop
 
+# Set Git aliases and other configurations
+if [[ $USER == "karan" ]]; then
+  git config --global user.email "dhruvkunzru@Gmail.com"
+  git config --global user.name "Dhruv Kunzru"
+fi
+
 #Nvchad setup
   mkdir -p ~/.fonts
   wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip" -O JetBrainsMono.zip
