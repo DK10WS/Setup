@@ -19,7 +19,7 @@ ___
 - Terminal: kgx
 - Terminal theme: OhMyBash(**Powerline-Multiline**)
 - GTK: Adwaita
-- File explorer:Gnome file manager / Thunar
+- File explorer: Nautilus / Thunar
 - Text Editor: Neovim
 - Code editor: Neovim 
 - Browser: Brave
@@ -27,7 +27,7 @@ ___
 ### Gnome Extensions
 - [Caffine](https://extensions.gnome.org/extension/517/caffeine/)
 - [ArchMenu](https://extensions.gnome.org/extension/3628/arcmenu/)
-- [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
+- [Pano - Clipboard Manager](https://extensions.gnome.org/extension/5278/pano/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 - [WeatherOclock](https://extensions.gnome.org/extension/5470/weather-oclock/)
 ___

@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm \
   noto-fonts-cjk noto-fonts-extra \
   nvidia-dkms\
   wget\
-  flatatpak\
+  flatpak\
   power-profiles-daemon\
   pavucontrol\
   python-pip\
@@ -36,6 +36,20 @@ sudo pacman -S --noconfirm \
   flatpak install flathub org.libreoffice.LibreOffice
 
 #taking care of nvidia(Idiots)
+# Check if NVIDIA hardware is present
+if lspci | grep -i "NVIDIA" &> /dev/null; then
+    echo "NVIDIA hardware found. Installing NVIDIA packages..."
+    
+  sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+  sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+
+  sudo pacman -S supergfxctl
+  systemctl enable --now supergfxd
+
+    echo "NVIDIA packages installed successfully."
+else
+    echo "No NVIDIA hardware found. Skipping NVIDIA package installation."
+fi
   sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
   sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 
@@ -77,6 +91,7 @@ fi
 #Clipboard History
 #Vitals
 #Weather Oclock
+#Pano Clipboard manager
 
 #Oh my bash setup
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
