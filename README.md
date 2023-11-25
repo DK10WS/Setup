@@ -30,7 +30,11 @@ ___
 - [Pano - Clipboard Manager](https://extensions.gnome.org/extension/5278/pano/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 - [WeatherOclock](https://extensions.gnome.org/extension/5470/weather-oclock/)
+- [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
 ___
+
+### Custom Gnome-shell extension
+[This](https://github.com/Mestane/CustomGnomeShell) is the link ot custom Shell
 ### ScreenShots of Desktop
 ![image](https://github.com/DK10WS/Setup/blob/master/Neoftech.png)
 

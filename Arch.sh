@@ -13,6 +13,8 @@ sudo pacman -S --noconfirm \
   pavucontrol\
   python-pip\
   ntfs-3g\
+  yarn\
+
 
 
 #enable bluez
