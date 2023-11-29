@@ -14,6 +14,7 @@ sudo pacman -S --noconfirm \
   python-pip\
   ntfs-3g\
   yarn\
+  gnome-tweaks\
 
 
 

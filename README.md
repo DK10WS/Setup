@@ -31,6 +31,7 @@ ___
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
 - [WeatherOclock](https://extensions.gnome.org/extension/5470/weather-oclock/)
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+- [Notification Timeout](https://extensions.gnome.org/extension/3795/notification-timeout/)
 ___
 
 ### Custom Gnome-shell extension
