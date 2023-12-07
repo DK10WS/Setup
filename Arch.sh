@@ -6,15 +6,19 @@ sudo pacman -S --noconfirm \
   git github-cli \
   gnome-themes-extra \
   noto-fonts-cjk noto-fonts-extra \
-  nvidia-dkms\
-  wget\
-  flatpak\
-  power-profiles-daemon\
-  pavucontrol\
-  python-pip\
-  ntfs-3g\
-  yarn\
-  gnome-tweaks\
+  nvidia-dkms \
+  wget \
+  flatpak \
+  power-profiles-daemon \
+  pavucontrol \
+  python-pip \
+  ntfs-3g \
+  yarn \
+  gnome-tweaks \
+  github-cli \
+  distrobox \
+  docker \
+  
 
 
 
