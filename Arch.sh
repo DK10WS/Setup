@@ -90,6 +90,7 @@ fi
   gsettings set org.gnome.desktop.interface clock-show-weekday true
   gsettings set org.gnome.desktop.interface clock-format '12h'
   gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrainsMono Nerd Font Medium 10'
+  gsettings set org.gnome.desktop.sound allow-volume-above-100-percent 'true'
 
 
 #Gnome custom extensions
