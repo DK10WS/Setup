@@ -73,7 +73,7 @@ if [[ $USER == "DK10" ]]; then
   git config --global user.email "dhruvkunzru@Gmail.com"
   git config --global user.name "Dhruv Kunzru"
 fi
-
+git config --global core.editor "nvim"
 #Nvchad setup
   mkdir -p ~/.fonts
   wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip" -O JetBrainsMono.zip
@@ -103,3 +103,4 @@ fi
 
 #Oh my bash setup
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+#Go to ~/.bashrc and change OSH_THEME="powerline-multiline"
