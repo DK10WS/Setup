@@ -1,3 +1,4 @@
+#!/bin/bash
 
 #installing packages
 sudo pacman -S --noconfirm \
@@ -18,9 +19,8 @@ sudo pacman -S --noconfirm \
   github-cli \
   distrobox \
   docker \
+  xclip \
   
-
-
 
 #enable bluez
   sudo systemctl enable --now bluetooth
@@ -103,4 +103,4 @@ git config --global core.editor "nvim"
 
 #Oh my bash setup
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-#Go to ~/.bashrc and change OSH_THEME="powerline-multiline"
+sed -i 's/font/powerline-multiline' ~/.bashrc
