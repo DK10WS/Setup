@@ -7,7 +7,6 @@ sudo pacman -S --noconfirm \
   git github-cli \
   gnome-themes-extra \
   noto-fonts-cjk noto-fonts-extra \
-  nvidia-dkms \
   wget \
   flatpak \
   power-profiles-daemon \
@@ -20,6 +19,7 @@ sudo pacman -S --noconfirm \
   distrobox \
   docker \
   xclip \
+  man \
   
 
 #enable bluez
@@ -50,8 +50,10 @@ if lspci | grep -i "NVIDIA" &> /dev/null; then
   sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
   sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 
-  sudo pacman -S supergfxctl
+  sudo pacman -S supergfxctl 
   systemctl enable --now supergfxd
+
+  sudo pacman -S nvidia-dkms
 
     echo "NVIDIA packages installed successfully."
 else

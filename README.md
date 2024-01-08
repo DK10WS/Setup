@@ -22,7 +22,7 @@ ___
 - File explorer: Nautilus / Thunar
 - Text Editor: Neovim
 - Code editor: Neovim 
-- Browser: Brave
+- Browser: Firefox
 *******
 ### Gnome Extensions
 - [Caffine](https://extensions.gnome.org/extension/517/caffeine/)
