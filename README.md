@@ -39,6 +39,6 @@ ___
 ### ScreenShots of Desktop
 ![image](https://github.com/DK10WS/Setup/blob/master/Neoftech.png)
 
-![image](https://github.com/DK10WS/Setup/blob/master/Desktop.png)
+![image](https://github.com/DK10WS/Setup/blob/master/UpdatedDesktop.png)
 
 
