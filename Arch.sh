@@ -20,6 +20,10 @@ sudo pacman -S --noconfirm \
   docker \
   xclip \
   man \
+  ripgrep \
+  firefox \
+  imv \
+
   
 
 #enable bluez
@@ -33,14 +37,16 @@ sudo pacman -S --noconfirm \
 #install yay packages
   yay -S --noconfirm \
     google-chrome \
-    brave\
     htop\
-    pipewire
+    pipewire\
+    supergfxctl\
 #install Flatpak packages
   flatpak install flathub com.spotify.Client\
   flatpak install flathub com.discordapp.Discord\
   flatpak install flathub org.telegram.desktop\
-  flatpak install flathub org.libreoffice.LibreOffice
+  flatpak install flathub org.libreoffice.LibreOffice\
+  flatpak install flathub com.brave.Browser\
+
 
 #taking care of nvidia(Idiots)
 # Check if NVIDIA hardware is present
@@ -62,7 +68,6 @@ fi
   sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
   sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 
-  sudo pacman -S supergfxctl
   systemctl enable --now supergfxd
 
 #battop install 
@@ -102,6 +107,10 @@ git config --global core.editor "nvim"
 #Vitals
 #Weather Oclock
 #Pano Clipboard manager
+#AppIndicator and KStatusNotifierItem Support
+#Media Progress
+#Search Light
+
 
 #Oh my bash setup
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
