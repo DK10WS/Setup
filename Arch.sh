@@ -13,7 +13,6 @@ sudo pacman -S --noconfirm \
   pavucontrol \
   python-pip \
   ntfs-3g \
-  yarn \
   gnome-tweaks \
   github-cli \
   distrobox \
@@ -24,7 +23,10 @@ sudo pacman -S --noconfirm \
   firefox \
   imv \
 
-  
+# Docker
+sudo pacman -S --noconfirm docker distrobox
+sudo usermod -aG docker $USER
+sudo systemctl enable --now docker 
 
 #enable bluez
   sudo systemctl enable --now bluetooth
@@ -48,28 +50,6 @@ sudo pacman -S --noconfirm \
   flatpak install flathub com.brave.Browser\
 
 
-#taking care of nvidia(Idiots)
-# Check if NVIDIA hardware is present
-if lspci | grep -i "NVIDIA" &> /dev/null; then
-    echo "NVIDIA hardware found. Installing NVIDIA packages..."
-    
-  sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-  sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-
-  sudo pacman -S supergfxctl 
-  systemctl enable --now supergfxd
-
-  sudo pacman -S nvidia-dkms
-
-    echo "NVIDIA packages installed successfully."
-else
-    echo "No NVIDIA hardware found. Skipping NVIDIA package installation."
-fi
-  sudo pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-  sudo pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-
-  systemctl enable --now supergfxd
-
 #battop install 
   wget https://github.com/svartalf/rust-battop/releases/download/v0.2.4/battop-v0.2.4-x86_64-unknown-linux-gnu -O battop
   sudo mv battop /usr/bin/
@@ -81,13 +61,6 @@ if [[ $USER == "DK10" ]]; then
   git config --global user.name "Dhruv Kunzru"
 fi
 git config --global core.editor "nvim"
-#Nvchad setup
-  mkdir -p ~/.fonts
-  wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip" -O JetBrainsMono.zip
-  unzip JetBrainsMono.zip -d ~/.fonts/
-  rm JetBrainsMono.zip
-  fc-cache -fv
-  git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 --quiet
 
 #Gnome extensions configure
   gsettings set org.gnome.shell disable-user-extensions false
@@ -114,4 +87,4 @@ git config --global core.editor "nvim"
 
 #Oh my bash setup
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-sed -i 's/font/powerline-multiline' ~/.bashrc
+sed -i 's/^\s*OSH_THEME="[^"]*"/OSH_THEME="powerline-multiline"/' ~/.bashrc
