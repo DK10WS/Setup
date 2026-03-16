@@ -6,11 +6,12 @@ sudo apt upgrade -y
 sudo apt install git
 git config --global user.email "dhruvkunzru@gmail.com"
 git config --global user.name "Dhruv Kunzru"
+git config --global core.editor "nvim"
 
 # neovim
-sudo wget https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-arm64.appimage -O /usr/local/bin/nvim
-sudo chmod +x /usr/local/bin/nvim
-git clone git@github.com:DK10WS/Neovim.git ~/.config/nvim
+# sudo wget https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-arm64.appimage -O /usr/local/bin/nvim
+# sudo chmod +x /usr/local/bin/nvim
+# git clone git@github.com:DK10WS/Neovim.git ~/.config/nvim
 
 #Docker
 sudo apt install ca-certificates curl gnupg lsb-release
@@ -24,8 +25,17 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo usermod -aG docker $USER
 sudo systemctl enable --now docker
 
-#packages
-sudo apt install btop -y
+# btop
+wget https://github.com/aristocratos/btop/releases/download/v1.4.5/btop-aarch64-linux-musl.tbz
+tar -xvjf btop-aarch64-linux-musl.tbz
+cd btop && sudo make install
+rm -rf btop btop-aarch64-linux-musl.tbz
+
+#Tailscale
+# curl -fsSL https://tailscale.com/install.sh | sh
+
+#Packages
+sudo apt install -y btop curl fastfetch neovim man-db tmux
 
 #ohmybash 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
